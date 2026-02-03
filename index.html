@@ -3,7 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Website</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background: white;
+        color: #555;
+      }
+
+      .site-header {
+        text-align: center;
+        padding: 80px 20px 60px;
+      }
+
+      .name {
+        font-size: 2.5rem;
+        letter-spacing: 0.3em;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      .tagline {
+        margin-top: 16px;
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+        color: #888;
+      }
+
+      .nav {
+        margin-top: 40px;
+      }
+
+      .nav a {
+        margin: 0 16px;
+        text-decoration: none;
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        color: #777;
+        text-transform: uppercase;
+      }
+
+      .nav a:hover {
+        color: #000;
+      }
+    </style>
   </head>
+
   <body>
+    <header class="site-header">
+      <h1 class="name">YOUR NAME</h1>
+      <p class="tagline">UX DESIGNER · WASHINGTON, DC</p>
+
+      <nav class="nav">
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
   </body>
 </html>
