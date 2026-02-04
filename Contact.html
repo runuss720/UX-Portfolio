@@ -2,8 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Website</title>
+    <title>Contact - Ruby Nuss</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background: white;
+        color: #555;
+      }
+
+      /* Header / Navigation */
+      .site-header {
+        text-align: center;
+        padding: 60px 20px 40px;
+      }
+
+      .name {
+        font-size: 2.5rem;
+        letter-spacing: 0.3em;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .tagline {
+        margin-top: 16px;
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+        color: #888;
+      }
+
+      .nav {
+        margin-top: 30px;
+      }
+
+      .nav a {
+        margin: 0 16px;
+        text-decoration: none;
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        color: #777;
+        text-transform: uppercase;
+      }
+
+      .nav a:hover {
+        color: #000;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
+
+      .contact-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column; /* stack items vertically */
+        align-items: flex-start; /* left align */
+        gap: 20px;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .contact-info a {
+        color: #555;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        color: #000;
+      }
+
+      /* Optional: make page responsive */
+      @media (max-width: 600px) {
+        .contact-info {
+          align-items: center; /* center on small screens */
+          text-align: center;
+        }
+      }
+    </style>
   </head>
+
   <body>
+    <!-- Header with navigation -->
+    <header class="site-header">
+      <h1 class="name">Ruby Nuss</h1>
+      <p class="tagline">UX Researcher · Asheville, NC</p>
+
+      <nav class="nav">
+        <a href="About.html">About</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Resume.html">Resume</a>
+        <a href="Contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/ruby-nuss-7a8429251/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2 class="contact-title">Contact Me</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:rubymnuss20@gmail.com">rubymnuss20@gmail.com</a></p>
+        <p>Phone: <a href="tel:+18282426475">+1 (828) 242-6475</a></p>
+      </div>
+    </section>
   </body>
 </html>
